@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./index.js" defer></script>
   </head>
 
@@ -18,15 +20,19 @@
         </div>
         <div class="profile">
           <ul>
-            <li><img src="./images/icons/notifcation_icon.svg" alt=""></li>
-            <li></li>
-            <li></li>
+            <li><img src="./images/icons/notifcation_icon.svg"
+                alt="notification bell"></li>
+            <li><img src='./images/icons/account_icon.svg' alt='account icon'>
+            </li>
+            <li>Morgan Oakley</li>
           </ul>
         </div>
         <div class="status">
-          <img src="" alt="" class="profile-picture">
-          <h2 class="username"></h2>
-          <p class="bio"></p>
+          <img src="./images/icons/account_icon.svg" alt="account icon"
+            class="profile-picture">
+          <p class="bio">Hi there,</p>
+          <h2 class="username">Morgan Oakley (@morgan)</h2>
+
         </div>
         <div class="buttons">
           <button>New</button>
@@ -35,153 +41,193 @@
         </div>
       </div>
       <div class="sidebar">
-        <img src="./images/icons/dashboard_icon.svg" alt="">
-        <h2>Dashboard</h2>
+        <div class="sidebar-title">
+          <span class="material-symbols-outlined title-icon">
+            dashboard
+          </span>
+          <span class='sidebar-title-text'>Dashboard</span>
+        </div>
         <ul>
           <li>
-            <img src="./images/icons/home_icon.svg" alt=""><span>Home</span>
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            <span>Home</span>
           </li>
           <li>
-            <img src="./images/icons/account_icon.svg"
-              alt=""><span>Profile</span>
+            <span class="material-symbols-outlined">
+              account_box
+            </span>
+            <span>Profile</span>
           </li>
           <li>
-            <img src="./images/icons/message_icon.svg"
-              alt=""><span>Messages</span>
+            <span class="material-symbols-outlined">
+              chat_bubble
+            </span>
+            <span>Messages</span>
           </li>
           <li>
-            <img src="./images/icons/history_icon.svg"
-              alt=""><span>History</span>
+            
+            <span class="material-symbols-outlined">
+              history
+            </span>
+            <span>History</span>
           </li>
           <li>
-            <img src="./images/icons/task_icon.svg" alt=""><span>Tasks</span>
+            <span class="material-symbols-outlined">
+              task
+            </span>
+            <span>Tasks</span>
           </li>
           <li>
-            <img src="./images/icons/groups_icon.svg"
-              alt=""><span>Communities</span>
+            <span class="material-symbols-outlined">
+              groups
+            </span>
+            <span>Communities</span>
           </li>
         </ul>
         <ul>
           <li>
-            <img src="./images/icons/settings_icon.svg"
-              alt=""><span>Settings</span>
+            <span class="material-symbols-outlined">
+              settings
+            </span>
+            <span>Settings</span>
           </li>
           <li>
-            <img src="./images/icons/help_icon.svg" alt=""><span>Support</span>
+            <span class="material-symbols-outlined">
+              help_center
+            </span>
+            <span>Support</span>
           </li>
           <li>
-            <img src="./images/icons/shield_icon.svg"
-              alt=""><span>Privacy</span>
+            <span class="material-symbols-outlined">
+              shield
+            </span>
+            <span>Privacy</span>
           </li>
         </ul>
       </div>
       <div class="main-content">
         <div class="cards">
           <div class="card">
-            <p class="title">Super Cool Project</p>
-            <p class="card-content">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras ac tortor non nunc tincidunt dictum id vel
-              augue. Pellentesque sed maximus massa. Vivamus eget ipsum imperdiet
-              augue vestibulum volutpat id eu tortor. Morbi non vulputate velit.
-              Praesent dapibus ultrices quam, sed viverra libero varius eu. Duis
-              quis ultrices nisi, in sodales risus. Integer non est libero. Fusce
-              nec neque id lorem eleifend sodales vitae dignissim felis. Sed vel
-              metus eu metus aliquam fringilla ac sed orci. Duis aliquam arcu id
-              enim eleifend convallis. Sed pharetra nulla nec tellus rutrum
-              vulputate. </p>
-            <input type="image" src="./images/icons/star_icon.svg"
-              alt="icon of a star" />
-            <input type='image' src="./images/icons/visibility_icon.svg"
-              alt="icon for share">
-            <input type='image' src="./images/icons/share_icon.svg"
-              alt="icon for share">
+            <div class="color-strip"></div>
+            <div class="card-content">
+              <p class="card-title">Super Cool Project</p>
+              <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Cras ac tortor non nunc tincidunt dictum id vel
+                augue. Pellentesque sed maximus massa. Vivamus eget ipsum
+                imperdiet
+                augue vestibulum volutpat id eu tortor. Morbi non vulputate
+                velit.
+                Praesent dapibus ultrices quam, sed viverra libero varius eu.
+                Duis
+                quis ultrices nisi, in sodales risus. Integer non est libero.
+              </p>
+
+              <div class='card-buttons'>
+                <input type="image" src="./images/icons/star_icon.svg"
+                  alt="icon of a star" />
+                <input type='image' src="./images/icons/visibility_icon.svg"
+                  alt="icon for share">
+                <input type='image' src="./images/icons/share_icon.svg"
+                  alt="icon for share">
+              </div>
+            </div>
           </div>
           <div class="card">
-            <p class="title">Less Cool Project</p>
-            <p class="card-content">Vivamus euismod lorem eu lorem convallis, eu
-              aliquet justo semper. Integer vel feugiat nisi, a porta ante. Ut
-              euismod nulla id odio elementum, et convallis eros semper. Duis erat
-              sapien, molestie in erat at, ornare hendrerit augue. Donec eros
-              justo, ornare sit amet ligula eu, convallis eleifend nibh. Nulla est
-              sapien, porttitor at odio quis, rutrum porta nunc. Maecenas
-              vulputate, felis sit amet suscipit auctor, purus leo tempor velit,
-              cursus eleifend nunc nunc a purus. </p>
-            <input type="image" src="./images/icons/star_icon.svg"
-              alt="icon of a star" />
-            <input type='image' src="./images/icons/visibility_icon.svg"
-              alt="icon for share">
-            <input type='image' src="./images/icons/share_icon.svg"
-              alt="icon for share">
+            <div class="color-strip"></div>
+            <div class="card-content">
+              <p class="card-title">Less Cool Project</p>
+              <p>Vivamus euismod lorem eu lorem convallis, eu
+                aliquet justo semper. Integer vel feugiat nisi, a porta ante. Ut
+                euismod nulla id odio elementum, et convallis eros semper. Duis
+                erat
+                sapien, molestie in erat at, ornare hendrerit augue. Donec eros
+                justo, ornare sit amet ligula eu, convallis eleifend nibh. </p>
+              <div class='card-buttons'>
+                <input type="image" src="./images/icons/star_icon.svg"
+                  alt="icon of a star" />
+                <input type='image' src="./images/icons/visibility_icon.svg"
+                  alt="icon for share">
+                <input type='image' src="./images/icons/share_icon.svg"
+                  alt="icon for share">
+              </div>
+            </div>
           </div>
           <div class="card">
-            <p class="title"> Impossible App</p>
-            <p class="card-content">Maecenas sodales, justo imperdiet luctus
-              dictum, ex magna pulvinar ipsum, tempus pulvinar ex lacus eget
-              risus. Donec luctus nisi eget quam varius pellentesque. Praesent
-              quis lacus nec nulla aliquam ullamcorper. Aliquam in leo nisl.
-              Pellentesque malesuada id nibh id imperdiet. Suspendisse potenti.
-              Morbi at urna a ligula vehicula scelerisque eget ac nisl. </p>
-            <input type="image" src="./images/icons/star_icon.svg"
-              alt="icon of a star" />
-            <input type='image' src="./images/icons/visibility_icon.svg"
-              alt="icon for share">
-            <input type='image' src="./images/icons/share_icon.svg"
-              alt="icon for share">
+            <div class="color-strip"></div>
+            <div class="card-content">
+              <p class="card-title"> Impossible App</p>
+              <p>Maecenas sodales, justo imperdiet luctus
+                dictum, ex magna pulvinar ipsum, tempus pulvinar ex lacus eget
+                risus. Donec luctus nisi eget quam varius pellentesque. Praesent
+                quis lacus nec nulla aliquam ullamcorper. </p>
+              <div class='card-buttons'>
+                <input type="image" src="./images/icons/star_icon.svg"
+                  alt="icon of a star" />
+                <input type='image' src="./images/icons/visibility_icon.svg"
+                  alt="icon for share">
+                <input type='image' src="./images/icons/share_icon.svg"
+                  alt="icon for share">
+              </div>
+            </div>
           </div>
           <div class="card">
-            <p class="title">Easy Peasy App</p>
-            <p class="card-content">Aliquam pretium ullamcorper nulla, et laoreet
-              lacus ultricies id. Pellentesque et tellus erat. Curabitur nec
-              ligula finibus odio pharetra blandit eu non odio. Praesent suscipit
-              tellus eu augue ornare, sed posuere nunc luctus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus. Duis cursus, risus
-              ac interdum gravida, urna metus efficitur elit, at porttitor dui
-              eros ac ligula. Aenean ut consequat ante. Vivamus ut lacinia tortor,
-              in dictum quam. Etiam nunc risus, aliquet sed magna a, ultrices
-              dictum nibh. Donec porta malesuada erat vitae commodo. Aenean odio
-              neque, tempus et arcu non, dapibus porttitor quam. </p>
-            <input type="image" src="./images/icons/star_icon.svg"
-              alt="icon of a star" />
-            <input type='image' src="./images/icons/visibility_icon.svg"
-              alt="icon for share">
-            <input type='image' src="./images/icons/share_icon.svg"
-              alt="icon for share">
+            <div class="color-strip"></div>
+            <div class="card-content">
+              <p class="card-title">Easy Peasy App</p>
+              <p>Aliquam pretium ullamcorper nulla, et
+                laoreet
+                lacus ultricies id. Pellentesque et tellus erat. Curabitur nec
+                ligula finibus odio pharetra blandit eu non odio. Praesent
+                suscipit
+                tellus eu augue ornare, sed posuere nunc luctus. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus.</p>
+              <div class='card-buttons'>
+                <input type="image" src="./images/icons/star_icon.svg"
+                  alt="icon of a star" />
+                <input type='image' src="./images/icons/visibility_icon.svg"
+                  alt="icon for share">
+                <input type='image' src="./images/icons/share_icon.svg"
+                  alt="icon for share">
+              </div>
+            </div>
           </div>
           <div class="card">
-            <p class="title">Ad Blocker</p>
-            <p class="card-content">Suspendisse dignissim, lacus vitae efficitur
-              porta, quam nulla semper turpis, quis consequat tellus ante eget
-              metus. Praesent lacinia odio libero, in venenatis nibh hendrerit
-              vitae. Suspendisse potenti. Ut efficitur fringilla urna, sit amet
-              scelerisque lorem dignissim quis. Duis commodo dictum dolor. Etiam
-              in dolor purus. Integer a fermentum erat, a viverra mi. Nunc
-              porttitor pharetra blandit. </p>
-            <input type="image" src="./images/icons/star_icon.svg"
-              alt="icon of a star" />
-            <input type='image' src="./images/icons/visibility_icon.svg"
-              alt="icon for share">
-            <input type='image' src="./images/icons/share_icon.svg"
-              alt="icon for share">
+            <div class="color-strip"></div>
+            <div class="card-content">
+              <p class="card-title">Ad Blocker</p>
+              <p>Suspendisse dignissim, lacus vitae efficitur
+                porta, quam nulla semper turpis, quis consequat tellus ante eget
+                metus. Praesent lacinia odio libero, in venenatis nibh hendrerit
+                vitae. Suspendisse potenti.</p>
+              <div class='card-buttons'>
+                <input type="image" src="./images/icons/star_icon.svg"
+                  alt="icon of a star" />
+                <input type='image' src="./images/icons/visibility_icon.svg"
+                  alt="icon for share">
+                <input type='image' src="./images/icons/share_icon.svg"
+                  alt="icon for share">
+              </div>
+            </div>
           </div>
           <div class="card">
-            <p class="title">Money Maker</p>
-            <p class="card-content">Praesent iaculis sapien ac nisl ultricies,
-              vitae cursus dui condimentum. Sed in pretium nunc, eget ornare
-              nulla. Fusce sed libero scelerisque, egestas nibh eget, eleifend
-              nunc. Nunc vestibulum enim ut interdum pulvinar. Donec faucibus
-              mauris eu ligula sodales, quis venenatis nunc euismod. Sed facilisis
-              fermentum mauris at varius. Nunc posuere tortor a augue porttitor
-              malesuada sed consequat leo. In at ante metus. Quisque tincidunt
-              sodales rutrum. Duis a urna fermentum, auctor metus sit amet,
-              viverra lacus. Vestibulum venenatis, nisl vitae luctus euismod,
-              lorem leo gravida leo, id vehicula sapien enim nec odio. Vestibulum
-              ligula lacus, dapibus eu posuere eu, tempor in ante. </p>
-            <input type="image" src="./images/icons/star_icon.svg"
-              alt="icon of a star" />
-            <input type='image' src="./images/icons/visibility_icon.svg"
-              alt="icon for share">
-            <input type='image' src="./images/icons/share_icon.svg"
-              alt="icon for share">
+            <div class="color-strip"></div>
+            <div class="card-content">
+              <p class="card-title">Money Maker</p>
+              <p>Praesent iaculis sapien ac nisl ultricies,
+                vitae cursus dui condimentum. Sed in pretium nunc, eget ornare
+                nulla. Fusce sed libero scelerisque, egestas nibh eget, eleifend
+                nunc. Nunc vestibulum enim ut interdum pulvinar. </p>
+              <div class='card-buttons'>
+                <input type="image" src="./images/icons/star_icon.svg"
+                  alt="icon of a star" />
+                <input type='image' src="./images/icons/visibility_icon.svg"
+                  alt="icon for share">
+                <input type='image' src="./images/icons/share_icon.svg"
+                  alt="icon for share">
+              </div>
+            </div>
           </div>
         </div>
         <div class="announcements">
@@ -189,16 +235,18 @@
           <div class='announcement-content'>
             <ul>
               <li>
-                <h3 class="title"></h3>
-                <p class="description"></p>
+                <h3 class="sub-title">Site Maintenance</h3>
+                <p class="description">Ut euismod nulla id odio elementum, et convallis eros semper. </p>
               </li>
+              <hr>
               <li>
-                <h3 class="title"></h3>
-                <p class="description"></p>
+                <h3 class="sub-title">Community Share Day</h3>
+                <p class="description">Vivamus eget ipsum imperdiet augue vestibulum volutpat id eu tortor. Morbi non vulputate velit. </p>
               </li>
+              <hr>
               <li>
-                <h3 class="title"></h3>
-                <p class="description"></p>
+                <h3 class="sub-title">Updated Privacy Policy</h3>
+                <p class="description">Donec luctus nisi eget quam varius pellentesque. Praesent quis lacus nec nulla aliquam ullamcorper.</p>
               </li>
             </ul>
           </div>
@@ -209,24 +257,47 @@
           <div class='trending-content'>
             <ul>
               <li>
-                <img src="" alt="" class="profile-picture">
-                <h3 class="username"></h3>
-                <p class="bio"></p>
+                <div class="status">
+                  <span class="material-symbols-outlined trending-icon">
+                    account_circle
+                  </span>
+                  <div class="trending-status">
+                    <h4 class="trending-uname">@morgan</h4>
+                    <p class="bio">World Peace Builder</p>
+                  </div>
               </li>
               <li>
-                <img src="" alt="" class="profile-picture">
-                <h3 class="username"></h3>
-                <p class="bio"></p>
+                <div class="status">
+                  <span class="material-symbols-outlined trending-icon">
+                    account_circle
+                  </span>
+                  <div class="trending-status">
+                    <h4 class="trending-uname">@morgan</h4>
+                    <p class="bio">Super Cool Project</p>
+                  </div>
               </li>
               <li>
-                <img src="" alt="" class="profile-picture">
-                <h3 class="username"></h3>
-                <p class="bio"></p>
+                <div class="status">
+                  <span class="material-symbols-outlined trending-icon">
+                    account_circle
+                  </span>
+                  <div class="trending-status">
+                    <h4 class="trending-uname">@morgan</h4>
+                    <p class="bio">Life Changing App</p>
+                  </div>
+                </div>
               </li>
               <li>
-                <img src="" alt="" class="profile-picture">
-                <h3 class="username"></h3>
-                <p class="bio"></p>
+                <div class="status">
+                  <span class="material-symbols-outlined trending-icon">
+                    account_circle
+                  </span>
+                  <div class="trending-status">
+                    <h4 class="trending-uname">@morgan</h4>
+                    <p class="bio">No Traffic Maker</p>
+                  </div>
+
+                </div>
               </li>
             </ul>
           </div>
